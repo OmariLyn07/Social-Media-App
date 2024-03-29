@@ -1,21 +1,24 @@
-import React from 'react';
-import './App.css'
-import Post from './assets/Post.jsx';
+import React, {useState} from 'react';
+import './App.css';
+import Create from './assets/CreatePost';
+import Feed from './assets/Feed';
+
 
 function App() {
 
+  const[post, postContent] = useState([])
+  
+  let onSubmission = (data) => {
+    postContent([...post, data])
+  }
+
   return(
     <div>
-      <h1>Fakebook!</h1>
-
-      {/* CreatePostForm */}
-
-      {/* Feed */}
-
-      <Post content="This is a test post!"/>
-
-      <Post content="This is another test post!"/>
-
+      <h1>Social Media App</h1>
+      <Create onSubmit={onSubmission}/>
+      
+      <Feed content={post}/>
+      
     </div>
   )
 }

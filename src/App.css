@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: black;
 }
 
 .logo {
@@ -39,4 +40,39 @@
 
 .read-the-docs {
   color: #888;
+}
+.form-data{
+  text-align: center;
+  display: block;
+}
+.msg-box {
+  margin: 10px;
+  border:1px solid aqua;
+  padding: 5px;
+}
+
+.cmt-box {
+  display: flex;
+  padding: 5px;
+}
+
+.post-box {
+  border: 1px solid white;
+  margin: 10px;
+  padding: 5px;
+}
+.sub-button{
+  position:sticky;
+  padding: 5px;
+  color:black;
+}
+.title{
+  float: none;
+  padding: 10px;
+}
+.post-area{
+  margin: 5px;
+  margin-left:50px;
+  padding-left: 1px;
+
 }
